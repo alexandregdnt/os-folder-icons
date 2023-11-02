@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+    python:
+        container_name: 'os-folder-python'
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./output:/app/output:rw
